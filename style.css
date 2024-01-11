@@ -1,0 +1,175 @@
+/*Body*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --btn-color-fix1: rgb(241, 86, 86);
+    --btn-color-fix2: rgb(210, 162, 162);
+    --btn-color-hover: rgb(235, 68, 68);
+    --btn-color-fix3: #20B2AA;
+    --btn-color-hover1: #008B8B;
+    --font-feature-fix: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*Header Design*/
+
+header {
+    height: 5vh;
+    background-image: url(./image/headerbackground.png);
+    text-align: center;
+}
+
+h3 {
+    line-height: 5vh;
+}
+
+
+/*Nav Design*/
+
+nav {
+    background-image: url(./image/box0background.png);
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+
+nav img {
+    margin-top: 2vh;
+    height: 5vh;
+    width: 15vw;
+    position: relative;
+    left: 5vw;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    font-family: var(--font-feature-fix);
+    height: 5vh;
+    margin-top: 2vh;
+    position: relative;
+    right: 10vw;
+}
+
+li {
+    margin-left: 2vw;
+    font-weight: bolder;
+    font-size: large;
+    justify-content: space-around;
+    line-height: 5vh;
+    border-radius: 3vh;
+    width: 10vw;
+    text-align: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+ul li #btn1 {
+    background-color: var(--btn-color-fix1);
+}
+
+ul li #btn2 {
+    background-color: var(--btn-color-fix2);
+}
+
+ul li #btn1,ul li #btn2 {
+    height: 5vh;
+    border-radius: 4vh;
+    font-size: large;
+    font-weight: bolder;
+    border: none;
+    position: relative;
+}
+
+ul li #btn1 {
+    z-index: 1;
+    width: 8vw;
+    left: -1vw;
+}
+
+ul li #btn2 {
+    z-index: 0;
+    width: 15vw;
+    padding-left: 7vw;
+    top: -5vh;
+}
+
+ul li #btn1:hover,
+ul li #btn2:hover {
+    background-color: var(--btn-color-hover);
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: var(--btn-color-fix2);
+}
+
+/*Container Design*/
+
+.container {
+    display: flex;
+}
+.left {
+    margin-top: 20vh;
+    height: 40vh;
+    width: 50vw;
+    font-family: var(--font-feature-fix);
+    font-size: larger;
+    padding: 10vh;
+}
+
+.right, .right img {
+    height: 70vh;
+    width: 45vw;
+    padding: 5vh;
+}
+.left, .right {
+    flex: 1;
+}
+
+.left p {
+    margin-top: 2vh;
+}
+
+.left .btn3 {
+    margin-top: 2vh;
+    height: 8vh;
+    width: 12vw;
+    border: none;
+    border-radius: 2vh;
+    font-size: large;
+    font-family: var(--font-feature-fix);
+    background-color: var(--btn-color-fix3);
+}
+
+.left .btn3:hover {
+    color:  aliceblue;
+    background-color: var(--btn-color-hover1);
+}
+
+/*Title Design*/
+
+.title {
+    margin-top: 5vh;
+    text-align: center;
+}
+
+/*Company Logos*/
+
+.companylogo {
+    margin-top: 3vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    height: 8vh;
+}
+
